@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind|Muli|Noto+Sans|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Explore</title>
+  </head>
+  <body>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "20em";
+        document.getElementById("main").style.marginLeft = "20em";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+
+      function onLinkClick() {
+        document.getElementsById("resturants").scrollIntoView();
+      }
+    </script>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="index.html">HOME</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="about.html">ABOUT</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="eat.html">EAT</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="explore.html">EXPLORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+  Section 1.
+  Best Bites button smoothscrolls the user to the top of this div.
+  Backgroud image is set to 60.6em.
+  Currently not using the Bootstrap columns and rows in this section.
+-->
+    <div class="explore" id="section1">
+      </br>
+      <div id="main">
+        <button class="nav" onclick="openNav()">☰ Navigation</button>
+      </div>
+
+      <h1>EXPLORE</h1>
+      <h2 class="exploreText">City. Beaches. Mountains. Forest.</h2>
+      <h2 class="exploreText">Seattle has something for everyone.</h2>
+      </br>
+      </br>
+      </br>
+      <button class="smoothscrollTop" onclick="window.location.href = '#section2';">Adventure Awaits</button>
+    </div>
+
+<!--
+  Section 2.
+  Best Bites button smoothscrolls the user to the top of this div.
+  Backgroud image is set to 60.6em.
+  <h1> is centered and at the top with the column set up to have three in the middle.
+-->
+    <div class="explore2" id="section2">
+      </br>
+      <h1>Sites to See</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="paraBack">
+                <h2>Space Needle</h2>
+              </div>
+            </br>
+              <p><a class="eatLinks" href = "https://www.spaceneedle.com/">More info</a></p>
+              <div class="paraBack">
+                <p>Seattle's most iconic landmark! It's been recently</p>
+                <p>updated to feature a new lookout deck</p>
+                <p>and a spinning resturant at the top.</p>
+              </div>
+            </div>
+          <div class="col">
+            <div class="paraBack">
+              <h2>Mt. Rainier</h2>
+            </div>
+          </br>
+            <p><a class="eatLinks" href = "https://visitrainier.com/">More info</a></p>
+            <div class="paraBack">
+              <p>This mountain dominates the Seattle Skyline.</p>
+              <p>Visit the Mt. Rainier national park</p>
+              <p>to embark on one of many hikes!</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="paraBack">
+              <h2>Seattle Art Museum</h2>
+            </div>
+          </br>
+            <p><a class="eatLinks" href = "http://www.seattleartmuseum.org/">More info</a></p>
+            <div class="paraBack">
+              <p>Free entry on the first Tuesday of every month.</p>
+              <p>Exhibits change frequently to showcase art</p>
+              <p>from around the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <button class="smoothscrollBottom" onclick="window.location.href = '#section1';">Back to top</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

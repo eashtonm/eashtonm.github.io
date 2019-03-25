@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind|Muli|Noto+Sans|Work+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>About</title>
+  </head>
+  <body>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "20em";
+        document.getElementById("main").style.marginLeft = "20em";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+
+      function onLinkClick() {
+        document.getElementsById("resturants").scrollIntoView();
+      }
+    </script>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="index.html">HOME</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="about.html">ABOUT</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="eat.html">EAT</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-md-auto">
+            <a href="explore.html">EXPLORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+  Section 1.
+  Best Bites button smoothscrolls the user to the top of this div.
+  Backgroud image is set to 60.6em.
+  Currently not using the Bootstrap columns and rows in this section.
+-->
+    <div class="about" id="section1">
+      </br>
+      <div id="main">
+        <button class="nav" onclick="openNav()">☰ Navigation</button>
+      </div>
+
+      <h1>ABOUT</h1>
+      <h2 class="aboutText">Seattle has plenty to do, see, and eat!</h2>
+      <h2 class="aboutText">Check out even more by visiting our Facebook, Instagram, and Twitter.</h2>
+
+      </br>
+      </br>
+      <a href="https://www.facebook.com/visitseattle/" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/visitseattle/?hl=en" class="fa fa-instagram"></a>
+      <a href="https://twitter.com/VisitSeattle?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+      </br>
+      <button class="smoothscrollTop" onclick="window.location.href = '#section2';">Contact Us!</button>
+    </div>
+
+<!--
+  Section 2.
+  Best Bites button smoothscrolls the user to the top of this div.
+  Backgroud image is set to 60.6em.
+  <h1> is centered and at the top with the column set up to have three in the middle.
+-->
+    <div class="about2" id="section2">
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      <h2>Want more information or personal recommendations for your visit to Seattle?</h2>
+      <h2>Contact us here!</h2>
+      <form>
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <input type="text" class="form-control" placeholder="Email address">
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <input type="text" class="form-control" placeholder="Message">
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <button type="submit" class="btn btn-info btn-rounded">Send</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <button class="smoothscrollBottom" onclick="window.location.href = '#section1';">Back to top</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
